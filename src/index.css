@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-color: #fefae0;
+  --card-bg: rgba(255, 255, 255, 0.96);
+  --text-main: #432818;
+  --border-color: #ece4db;
+  --btn-grad: linear-gradient(135deg, #432818, #603808);
+  --accent: #bb9457;
+  --success: #2d6a4f;
+  --error: #a4161a;
+}
+
+/* YENİ PROFESYONEL ANTRASİT TEMA */
+[data-theme='dark'] {
+  --bg-color: #121417; /* Derin Antrasit Arka Plan */
+  --card-bg: #1c1f24; /* Daha belirgin Antrasit Kartlar */
+  --text-main: #f8fafc;
+  --border-color: #2d333b;
+  --btn-grad: linear-gradient(135deg, #10b981, #059669); /* İç açıcı Taze Yeşil */
+  --accent: #34d399;
+  --success: #10b981;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-x: hidden;
+}
+
+.animate-fade { animation: fadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1); }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
